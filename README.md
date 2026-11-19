@@ -1,5 +1,11 @@
 # Token Radar
 
+[![make.fun · token-radar-01](https://make.fun/badge/token-radar-01.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![rank](https://make.fun/badge/token-radar-01/anatadare/makefun-tokenradar/rank.svg)](https://make.fun/bounty/token-radar-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+[![reward](https://make.fun/badge/token-radar-01/anatadare/makefun-tokenradar/reward.svg)](https://make.fun/bounty/token-radar-01?utm_source=github&utm_medium=readme&utm_campaign=token-radar-01)
+
+Built for the [Token Radar bounty on make.fun](https://make.fun/bounty/token-radar-01). [Join make.fun with my referral link](https://make.fun/r/x5qvvfcq).
+
 A token launch radar for the make.fun `token-radar-01` bounty: it reads one
 frozen DefiLlama snapshot, ranks the protocols that record no token by the
 implied value a token would have if their record held, and gives every row a
