@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-row">
+    <div>
+      <h1>Token Radar</h1>
+      <p class="tagline">Protocols that record no token, ranked by what a token would be worth if their
+        record held. One frozen DefiLlama snapshot, one model, every row with a farm plan.</p>
+    </div>
+    <div class="coverage" id="coverage" aria-live="polite"></div>
+  </div>
+</header>
+<main class="wrap" id="view"></main>
+<footer class="wrap foot">
+  <p>Implied value = TVL &times; category multiple &times; growth &times; age &times; chains.
+    Multiples are fitted on the snapshot's own token-trading protocols: ratios winsorized at the
+    95th percentile, then shrunk toward the global median. Costs in farm plans are planning ranges,
+    never quotes. &ldquo;No token recorded&rdquo; means DefiLlama records no token for the protocol,
+    never that it has none.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
