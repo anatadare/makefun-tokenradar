@@ -91,8 +91,12 @@ function main(): void {
   if (outDir === '/' || outDir === resolve(REPO_ROOT)) {
     fail(`refusing to use ${outDir} as the output directory`);
   }
-  rmSync(outDir, { recursive: true, force: true });
+  // Empty the output directory without removing it: the grader mounts /output
+  // as a volume, and removing a mount point fails with EBUSY (exit 1).
   mkdirSync(outDir, { recursive: true });
+  for (const entry of readdirSync(outDir)) {
+    rmSync(join(outDir, entry), { recursive: true, force: true });
+  }
 
   writeFileSync(join(outDir, 'board.json'), `${JSON.stringify({ rows: board.rows }, null, 2)}\n`, 'utf8');
   const data = {
